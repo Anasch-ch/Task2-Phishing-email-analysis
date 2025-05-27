@@ -1,0 +1,90 @@
+## Detailed Phishing Email Analysis Report
+
+##1. Email Sample Overview
+Source: phishing email sample for educational purposes.(stimulated from phishtank)
+
+Date Received: [03-05-2020]
+
+Purpose: To trick the recipient into clicking a malicious link by impersonating a bank alert.
+
+## 2. Sender’s Email Address Analysis
+From: alert@secure-bank.com
+
+Analysis:
+
+At first glance, the email address seems legitimate, mimicking a bank’s alert system.
+
+However, most real banks have specific, well-known official domains (e.g., securebank.com or bankname.com).
+
+The hyphen (-) in secure-bank.com can be a subtle difference used to deceive users (typosquatting).
+
+Spoofed email addresses are common in phishing to trick users into trusting the sender.
+
+##3. Email Header Analysis (Hypothetical)
+Tools Used: Online email header analyzer (e.g., MxToolbox Email Header Analyzer)
+
+Findings:
+
+SPF (Sender Policy Framework): Fails because the sending IP is not authorized to send mail for secure-bank.com.
+
+DKIM (DomainKeys Identified Mail): Missing or invalid signature, indicating the email may have been forged.
+
+DMARC (Domain-based Message Authentication): Policy is not aligned or is set to reject, but the email bypassed these controls, raising suspicion.
+
+Received Headers: The email was relayed through suspicious IP addresses unrelated to the legitimate bank’s mail servers.
+
+These inconsistencies in the header confirm the sender’s address is likely spoofed or the message is forged.
+
+
+##4. Suspicious Links and Attachments
+Link Displayed: https://secure-bank.com (appears trustworthy)
+
+Actual Link: https://verify-account-login.com (a completely different domain)
+
+Risk:
+
+This is a classic phishing technique called URL spoofing or link masking.
+
+Hovering over the link reveals the real destination, which is designed to look like a login page to steal credentials.
+
+Attachments: None in this example, but phishing emails often include malicious attachments like .exe, .scr, .zip which may install malware.
+
+## 5. Language and Tone Analysis
+Urgency and Threats:
+
+Phrases like “Your bank account will be locked!” and “Failure to verify within 24 hours” pressure recipients to act quickly without thinking.
+
+This psychological manipulation induces panic, increasing the likelihood that the victim will click the malicious link.
+
+Politeness and Formality:
+
+The email attempts to sound professional and polite, closing with “Thank you for your prompt attention” and “Sincerely, Secure Bank Security Team.”
+
+This adds a false sense of trustworthiness.
+
+
+## 6. URL Mismatches
+The URL visible to the user (secure-bank.com) is different from the real URL (verify-account-login.com).
+
+This mismatch is one of the strongest phishing indicators.
+
+If a user clicks the link, they could be taken to a fake login page designed to steal credentials.
+
+## 7. Spelling and Grammar Errors
+In this example, spelling and grammar are mostly correct, showing a higher level of sophistication.
+
+Some phishing emails have obvious mistakes, but many modern phishing attempts are professionally written.
+
+
+##8. Summary of Phishing Characteristics
+The email exhibits multiple phishing indicators:
+
+Spoofed and deceptive sender address.
+
+Email header discrepancies (SPF/DKIM failures).
+
+Mismatched and suspicious URLs designed to steal login credentials.
+
+Use of urgent and threatening language to coerce immediate action.
+
+These elements combined make the email a high-risk phishing attempt aimed at compromising user security.
