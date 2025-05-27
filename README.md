@@ -5,9 +5,9 @@
   Deliverables: A report listing phishing indicators found
 
 ## 1. Email Sample Overview
-Source: Simulated phishing email sample for educational purposes.
+Source: phishing email sample for educational purposes.(phishtank)
 
-Date Received: [27-05-2025]
+Date Received: [03-05-2020]
 
 Purpose: To trick the recipient into clicking a malicious link by impersonating a bank alert.
 
